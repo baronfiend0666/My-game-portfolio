@@ -3,24 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>게임기획 포트폴리오 메인</title>
-    
     <link rel="icon" href="favicon.png" type="image/png">
-    
     <style>
-        /* 메인 페이지의 기본 디자인 배경 설정 (예시: 어두운 회색) */
+        /* 메인 페이지 디자인 설정 */
         body {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #ffffff; /* 하얀색 배경 */
+            color: #000000; /* 검은색 글씨 */
             font-family: 'Malgun Gothic', sans-serif;
-            text-align: center;
-            padding-top: 100px;
+            margin: 0;
+            padding: 50px;
+        }
+
+        /* 콘텐츠가 화면 가운데에 적당한 너비로 예쁘게 모이도록 설정 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* 큰 제목에 카를로타 느낌의 붉은색 포인트 */
+        h1 { color: #DC143C; }
+        
+        /* 섹션별 소제목 아래에 깔끔한 가로줄 추가 */
+        h2 { 
+            border-bottom: 2px solid #eeeeee; 
+            padding-bottom: 10px; 
+            margin-top: 50px; 
+        }
+
+        /* 리스트(목록) 간격 설정 */
+        ul { font-size: 1.1rem; padding-left: 20px; }
+        li { margin-bottom: 15px; }
+
+        /* 클릭할 수 있는 링크(a 태그) 디자인 설정 */
+        a { 
+            color: #0066cc; /* 기본 파란색 링크 */
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        
+        /* 링크에 마우스를 올렸을 때의 변화 */
+        a:hover { 
+            text-decoration: underline; 
+            color: #DC143C; 
         }
     </style>
 </head>
 <body>
 
-    <h1>환영합니다! 박정호의 게임기획 포트폴리오 모음 사이트 메인 화면입니다.</h1>
-    <p>하단에는 저의 게임기획 관련 섹션별 모음집, 상세 설명, 기타 사이트 링크 등이 있습니다.</p>
+    <div class="container">
+        <h1>사용자의 게임기획 포트폴리오</h1>
+        <p>매력적인 세계관과 몰입감 있는 시나리오를 설계하는 게임기획 역량을 담은 포트폴리오입니다.</p>
+
+        <h2>📁 포트폴리오 상세 문서</h2>
+        <p>아래 각 항목을 클릭하시면 세부 기획 문서를 새 창에서 확인하실 수 있습니다.</p>
+        <ul>
+            <li><a href="여기에_GDD_공유링크_붙여넣기" target="_blank">Project P_GDD</a></li>
+            <li><a href="여기에_개발제안서_공유링크_붙여넣기" target="_blank">Project P_개발 제안서</a></li>
+            <li><a href="여기에_게임소개서_공유링크_붙여넣기" target="_blank">Project P_게임 소개서</a></li>
+        </ul>
+
+        <h2>🔍 레퍼런스 분석 및 아카이빙</h2>
+        <ul>
+            <li><a href="https://blog.naver.com/baron-fiend_official" target="_blank">바론핀드 네이버 공식 블로그</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
