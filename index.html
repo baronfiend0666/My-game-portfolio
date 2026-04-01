@@ -11,30 +11,31 @@
         .video-background {
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
-            pointer-events: none; /* 마우스로 영상 클릭이나 일시정지하는 것을 방지 */
-            z-index: -1; /* 영상을 글자 뒤로 배치 */
+            pointer-events: none; /* 영상 클릭/일시정지 방지 */
+            z-index: -1; 
         }
         
-        /* 유튜브 특유의 위아래 검은 여백을 없애기 위해 영상 크기를 약간 키움 */
+        /* 여백을 없애기 위해 영상 크기를 약간 키움 */
         .video-background iframe {
             width: 100vw; height: 100vh;
             transform: scale(1.2); 
         }
 
-        /* 메인 페이지로 넘어가는 입장 텍스트 디자인 */
+        /* [수정됨] 하단 좌측으로 입장 텍스트(타이틀) 배치 */
         .enter-button {
             position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
+            bottom: 50px; /* 화면 맨 아래에서 50px 띄움 */
+            left: 50px;   /* 화면 왼쪽에서 50px 띄움 */
             color: #ffffff;
             font-size: 3rem;
             text-decoration: none;
             font-weight: bold;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /* 영상 위에서 글자가 잘 보이도록 그림자 추가 */
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.9); /* 글자가 잘 보이도록 진한 그림자 */
             z-index: 1;
+            transition: color 0.3s ease;
         }
 
-        /* 마우스를 텍스트 위에 올렸을 때 색상 변화 */
+        /* 마우스를 올렸을 때 색상 변화 */
         .enter-button:hover {
             color: #ffcc00; 
         }
@@ -47,7 +48,7 @@
                 frameborder="0" allow="autoplay; fullscreen"></iframe>
     </div>
 
-    <a href="main.html" class="enter-button">포트폴리오 입장하기</a>
+    <a href="main.html" class="enter-button">게임기획 포트폴리오 입장</a>
 
 </body>
 </html>
