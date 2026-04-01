@@ -5,68 +5,94 @@
     <title>게임기획 포트폴리오 메인</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <style>
-        /* 메인 페이지 디자인 설정 */
         body {
-            background-color: #ffffff; /* 하얀색 배경 */
-            color: #000000; /* 검은색 글씨 */
+            background-color: #ffffff;
+            color: #000000;
             font-family: 'Malgun Gothic', sans-serif;
             margin: 0;
-            padding: 50px;
+            padding: 40px 20px;
         }
-
-        /* 콘텐츠가 화면 가운데에 적당한 너비로 예쁘게 모이도록 설정 */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            line-height: 1.6;
         }
-
-        /* 큰 제목에 카를로타 느낌의 붉은색 포인트 */
-        h1 { color: #DC143C; }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 { color: #DC143C; font-size: 2.5rem; margin-bottom: 10px; }
         
-        /* 섹션별 소제목 아래에 깔끔한 가로줄 추가 */
-        h2 { 
-            border-bottom: 2px solid #eeeeee; 
-            padding-bottom: 10px; 
-            margin-top: 50px; 
+        /* 섹션(카드) 디자인 */
+        .project-section {
+            border: 1px solid #e1e1e1;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
         }
-
-        /* 리스트(목록) 간격 설정 */
-        ul { font-size: 1.1rem; padding-left: 20px; }
-        li { margin-bottom: 15px; }
-
-        /* 클릭할 수 있는 링크(a 태그) 디자인 설정 */
+        .project-section:hover {
+            transform: translateY(-5px); /* 마우스 올리면 살짝 들림 */
+            border-color: #DC143C;
+        }
+        
+        h2 { 
+            color: #333; 
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        ul { list-style: none; padding: 0; }
+        li { margin: 12px 0; font-size: 1.1rem; }
+        
         a { 
-            color: #0066cc; /* 기본 파란색 링크 */
+            color: #0066cc; 
             text-decoration: none; 
             font-weight: bold; 
         }
-        
-        /* 링크에 마우스를 올렸을 때의 변화 */
-        a:hover { 
-            text-decoration: underline; 
-            color: #DC143C; 
+        a:hover { color: #DC143C; text-decoration: underline; }
+
+        .archive-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 60px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>박정호의 게임기획 포트폴리오</h1>
-        <p>매력적인 세계관과 몰입감 있는 시나리오를 설계하는 게임기획 역량을 담은 포트폴리오입니다.</p>
+        <header>
+            <h1>박정호의 게임기획 포트폴리오</h1>
+            <p>게임 기획자 겸 웹소설 작가, 게임 방송 버튜버로 살고 싶은 휴먼입니다.</p>
+        </header>
 
-        <h2>📁 포트폴리오 상세 문서</h2>
-        <p>하단의 각 항목을 클릭하시면 세부 기획 섹션들을 새 창에서 각각 확인하실 수 있습니다.</p>
-        <ul>
-            <li><a href="여기에_GDD_공유링크_붙여넣기" target="_blank">Project P_GDD</a></li>
-            <li><a href="여기에_개발제안서_공유링크_붙여넣기" target="_blank">Project P_개발 제안서</a></li>
-            <li><a href="여기에_게임소개서_공유링크_붙여넣기" target="_blank">Project P_게임 소개서</a></li>
-        </ul>
+        <section class="project-section">
+            <h2>🎮 PROJECT 01. Project P</h2>
+            <p>프로젝트 한 줄 설명: 원작 웹소설 IP 기반(2건)의 게임 OSMU.</p>
+            <ul>
+                <li><a href="gdd_partrice.pdf" target="_blank">📄 GDD 문서</a></li>
+                <li><a href="proposal_partrice.pdf" target="_blank">📊 개발 제안서</a></li>
+                <li><a href="pitch_partrice.pdf" target="_blank">📢 게임 소개서</a></li>
+            </ul>
+        </section>
 
-        <h2>🔍 레퍼런스 게임과 네이버 공식 블로그</h2>
-        <ul>
-            <li><a href="https://blog.naver.com/baron-fiend_official" target="_blank">바론핀드 네이버 공식 블로그</a></li>
-        </ul>
+        <section class="project-section">
+            <h2>🎮 PROJECT 02. [드래곤즈 스웜]</h2>
+            <p>프로젝트 한 줄 설명: 1인칭 싱글 플레이 액션 슈팅 게임.</p>
+            <ul>
+                <li><a href="#" style="color: #ccc; cursor: default;">준비 중입니다.</a></li>
+            </ul>
+        </section>
+
+        <div class="archive-section">
+            <h2>🔍 레퍼런스 게임 플레이 관련 네이버 공식 블로그</h2>
+            <ul>
+                <li><a href="https://blog.naver.com/baron-fiend_official" target="_blank">🌐 바론핀드 네이버 공식 블로그</a></li>
+            </ul>
+        </div>
     </div>
 
 </body>
