@@ -59,6 +59,54 @@
             border-radius: 8px;
             margin-top: 60px;
         }
+        /* 가로 구분선 스타일 */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+/* 하위 섹션 전체 박스 */
+.sub-section-container {
+  background-color: #f9f9f9; /* 이미지와 같은 연한 회색 배경 */
+  padding: 20px;
+  border-radius: 12px; /* 둥근 모서리 */
+}
+
+/* 하위 섹션 제목 */
+.sub-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* 버튼 정렬 및 스타일 */
+.pdf-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pdf-btn {
+  display: block;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  color: #444;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.pdf-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  transform: translateX(5px); /* 호버 시 살짝 오른쪽으로 이동하는 효과 */
+}
     </style>
 </head>
 <body>
@@ -77,16 +125,14 @@
             <h2>🎮 PROJECT 01. Project P(Project Patris)</h2>
             <p>프로젝트 한 줄 설명: 원작 웹소설 IP 기반(2건)의 게임 OSMU.</p>
             <ul>
-                <li><a href="https://www.notion.so/OSMU-Project-P-335ecdc71d17801f8f40fb98f9536237?source=copy_link" target="_blank">🔗 Project P_Notion 기획 페이지</a></li>
+                <li><a href="https://www.notion.so/OSMU-Project-P-335ecdc71d17801f8f40fb98f9536237?source=copy_link" target="_blank">🔗Project P_Notion 기획 페이지</a></li>
                 <li><a href="Project_P_GDD.pdf#page=1" target="_blank">📄 GDD 문서</a></li>
-                <li><a href="/proposal_patris.pdf" target="_blank">🚧 개발제안서(SWOT & STP 포함) 보기</a>
+                <li><a href="/proposal_patris.pdf" target="_blank"> 🚧개발제안서(SWOT & STP 포함) 보기</a>
                 <li><a href="pitch_patris.pdf" target="_blank">📢 파트리스(Patris)-원페이지 기획서(게임소개서)</a></li>
-            </ul> <hr style="margin: 25px 0; border: none; border-top: 1px solid #e0e0e0;" />
-
-<div class="detailed-section" style="padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
-    <h3 style="margin-top: 0; color: #333;">⚚ 하위 섹션(Sub_section 01)</h3>
-    <p style="color: #666; font-size: 14px;">
-        <div class="sub-section-content">
+                <hr class="section-divider">
+<div class="sub-section-container">
+  <h3 class="sub-section-title">🧚 하위 섹션(Sub_section 01)</h3>
+  
   <div class="pdf-button-group">
     <a href="https://my-game-portfolio-tau.vercel.app/game_story.pdf" target="_blank" class="pdf-btn">📖 게임 스토리</a>
     <a href="https://my-game-portfolio-tau.vercel.app/synopsis.pdf" target="_blank" class="pdf-btn">📝 시놉시스</a>
@@ -98,32 +144,7 @@
     <a href="https://my-game-portfolio-tau.vercel.app/cinematic.mp4" target="_blank" class="pdf-btn">🎥 게임 엔진을 이용한 시네마틱 연출(또는 게임 트레일러)</a>
   </div>
 </div>
-.pdf-button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px; /* 버튼 사이 간격 */
-  margin-top: 12px;
-}
-
-.pdf-btn {
-  display: inline-block;
-  padding: 10px 16px;
-  background-color: #f8f9fa; /* 밝은 회색 배경 */
-  color: #333;
-  text-decoration: none;
-  border-radius: 6px;
-  border: 1px solid #e9ecef;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out;
-}
-
-.pdf-btn:hover {
-  background-color: #e2e6ea; /* 마우스 오버 시 약간 진해짐 */
-  transform: translateY(-1px);
-}
-    </p>
-</div>
+            </ul>
         </section>
 
         <section class="project-section">
@@ -141,7 +162,7 @@
             </ul>
         </div>
         <div style="margin-top: 40px; padding: 25px; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 15px;">
-    <h3 style="margin-top: 0; color: #333; font-size: 1.2rem; margin-bottom: 20px;">📱 원작 웹소설 연재 정보 (OSMU IP)</h3>
+    <h3 style="margin-top: 0; color: #333; font-size: 1.2rem; margin-bottom: 20px;">📱 원작 웹소설 연재 정보 (OSMU)</h3>
 
     <div style="margin-bottom: 20px; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
         <h4 style="margin: 0 0 12px 0; font-size: 1.1rem;">
